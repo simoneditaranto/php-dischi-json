@@ -37,10 +37,31 @@
 
         <main class="container mt-3 px-5 pb-5">
 
-            <div class="cards row justify-content-between gap-3">
+            <div class="cards row justify-content-between gap-3 mb-3">
                 <div 
                     class="card col-3 d-flex flex-column align-items-center gap-2 py-4 text-center text-white"
-                    v-for="currentAlbum in albums"
+                    v-for="(album, index) in albums"
+                    @click="showCardInfo(index)"
+                >
+                    <div class="poster">
+                        <img :src="album" alt="" class="poster-image">
+                    </div>
+                    <!-- <div class="title fw-bold">
+                        {{album.title}}
+                    </div>
+                    <div class="author">
+                        {{album.author}}
+                    </div>
+                    <div class="year fw-bold">
+                        {{album.year}}
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="row">
+            <div 
+                    class="card col-3 d-flex flex-column align-items-center gap-2 py-4 text-center text-white"
+                    v-show="currentAlbum"
                 >
                     <div class="poster">
                         <img :src="currentAlbum.poster" alt="" class="poster-image">

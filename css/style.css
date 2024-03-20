@@ -22,10 +22,18 @@ header {
 
 
 /* main */
-.cards .card{
+.card{
     border: none;
 
     background-color: #112030;
+
+    cursor: pointer;
+
+    transition: scale .5s ease;
+}
+
+.card:hover{
+    scale: 1.2;
 }
 
 .card .poster{
