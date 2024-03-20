@@ -1,0 +1,39 @@
+body {
+    background-color: #1D2D3C;
+}
+
+/* header */
+header {
+    display: flex;
+    align-items: center;
+
+    height: 100px;
+
+    background-color: #09141E;
+
+}
+
+.logo{
+    width: 50px;
+}
+/* fine header */
+
+
+/* main */
+.cards .card{
+    border: none;
+
+    background-color: #112030;
+}
+
+.card .poster{
+    width: 150px;
+}
+
+.card .poster .poster-image{
+    width: 100%;
+}
+
+
+/* fine main */
+
